@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>Madam Ji 💗</title>
+<style>
+:root{--g:rgba(255,255,255,.13);--b:rgba(255,255,255,.48)}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#fff;overflow-x:hidden;background:radial-gradient(circle at 17% 26%,rgba(255,255,255,.38) 0 4%,transparent 19%),radial-gradient(circle at 85% 74%,rgba(0,218,255,.25) 0 6%,transparent 20%),radial-gradient(circle at 54% 8%,rgba(255,255,255,.18) 0 8%,transparent 24%),linear-gradient(120deg,#f58fc5 0%,#f6acd5 30%,#f7d4e8 56%,#a5ebf5 100%);position:relative}body:before,body:after{content:"";position:fixed;pointer-events:none;border-radius:50%;z-index:0}body:before{width:420px;height:420px;left:-180px;top:110px;background:rgba(255,55,158,.25);filter:blur(5px);box-shadow:760px 390px 0 25px rgba(255,135,205,.14)}body:after{width:360px;height:360px;right:-150px;bottom:50px;background:rgba(28,214,245,.23);filter:blur(7px)}
+.nav-shell{position:relative;z-index:4;width:min(1150px,90%);margin:28px auto 0;padding:15px 28px;border:1px solid var(--b);border-radius:24px;background:var(--g);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 15px 50px rgba(194,72,148,.12),inset 0 1px 0 rgba(255,255,255,.3);display:flex;align-items:center;justify-content:space-between}.logo{font-size:19px;font-weight:800;letter-spacing:2px;white-space:nowrap}nav{display:flex;gap:24px;align-items:center}nav a{color:rgba(255,255,255,.92);text-decoration:none;font-size:12px;font-weight:700;letter-spacing:1px}
+.page{position:relative;z-index:1;width:min(1150px,90%);margin:34px auto 70px}.glass{border:1px solid var(--b);border-radius:38px;background:var(--g);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 30px 80px rgba(183,71,144,.16),inset 0 1px 0 rgba(255,255,255,.42)}.screen{display:none;min-height:600px;padding:50px;position:relative;overflow:hidden}.screen.active{display:flex;align-items:center;justify-content:center}.screen:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:-220px;top:-150px;background:rgba(255,255,255,.11);box-shadow:860px 420px 0 35px rgba(0,218,255,.08)}.content{position:relative;z-index:2;width:min(780px,100%);text-align:center}.eyebrow{font-size:12px;letter-spacing:4px;font-weight:800;opacity:.82;margin-bottom:18px}h1{font-size:clamp(44px,7vw,78px);line-height:.97;letter-spacing:-3px;margin-bottom:18px;text-shadow:0 5px 25px rgba(182,64,143,.14)}h2{font-size:clamp(28px,5vw,48px);line-height:1.08;letter-spacing:-1px;margin-bottom:14px}p{color:rgba(255,255,255,.9);line-height:1.65}.lead{max-width:640px;margin:0 auto;font-size:17px}.button-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}button,.btn{border:1px solid rgba(255,255,255,.62);background:rgba(255,255,255,.12);color:#fff;border-radius:999px;padding:14px 25px;font:inherit;font-weight:800;letter-spacing:.5px;cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;box-shadow:inset 0 1px rgba(255,255,255,.32),0 12px 30px rgba(194,65,143,.10)}button:hover,.btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.2)}.primary{background:rgba(255,255,255,.2)}.dots{display:flex;justify-content:center;gap:9px;margin-top:48px}.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.84)}.dots i:first-child{background:#ef78b5}.warning{margin:20px auto 0;padding:12px 16px;border-radius:18px;display:inline-block;border:1px solid rgba(255,255,255,.33);background:rgba(255,255,255,.08);font-size:13px}.fade-in{animation:fadeIn .55s ease both}@keyframes fadeIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.modal{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(34,15,42,.2);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);opacity:0;pointer-events:none;transition:opacity .35s ease}.modal.show{opacity:1;pointer-events:auto}.modal-card{width:min(520px,92vw);padding:22px;text-align:center;border:1px solid var(--b);border-radius:28px;background:rgba(255,255,255,.16);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 35px 90px rgba(75,20,70,.28),inset 0 1px rgba(255,255,255,.35);transform:scale(.82) translateY(18px);opacity:0;transition:transform .38s cubic-bezier(.2,.8,.2,1),opacity .38s ease}.modal.show .modal-card{transform:scale(1) translateY(0);opacity:1}.modal-card img{width:100%;max-height:330px;object-fit:contain;border-radius:20px;display:block;margin:0 auto 12px;background:rgba(255,255,255,.06)}.modal-title{font-weight:800;margin-bottom:4px}.modal-sub{font-size:12px;opacity:.72}.video-wrap{margin-top:26px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.38);background:rgba(0,0,0,.12)}video{display:block;width:100%;max-height:420px;background:#111}
+.date-boxes{display:flex;gap:10px;justify-content:center;margin:24px 0 18px;flex-wrap:wrap}.date-boxes input{width:92px;padding:14px 10px;border-radius:16px;border:1px solid rgba(255,255,255,.58);outline:none;background:rgba(255,255,255,.13);color:#fff;text-align:center;font-size:18px;font-weight:800;backdrop-filter:blur(12px)}.date-boxes input::placeholder{color:rgba(255,255,255,.68)}.date-boxes input:focus{box-shadow:0 0 0 3px rgba(255,255,255,.15)}.wrong-message{min-height:38px;margin:10px auto 0;font-weight:800;font-size:14px}
+.message-card{padding:34px 28px 38px;text-align:left}.message-head{text-align:center;margin-bottom:26px}.message-head p{font-size:14px;opacity:.9}.message-scroll{max-height:65vh;overflow:auto;padding-right:8px;scroll-behavior:smooth}.message-scroll::-webkit-scrollbar{width:7px}.message-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:20px}.message-text{white-space:pre-wrap;font-size:15px;line-height:1.85;color:#fff}.final-box{margin-top:28px;padding:28px 22px;text-align:center}.final-box p{font-size:16px;line-height:1.7}.snow-layer{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden}.snow{position:absolute;top:-30px;font-size:18px;animation:fall linear forwards;filter:drop-shadow(0 4px 10px rgba(255,255,255,.35))}@keyframes fall{from{transform:translate3d(0,-20px,0) rotate(0deg);opacity:0}10%{opacity:1}to{transform:translate3d(var(--drift),110vh,0) rotate(360deg);opacity:.95}}
+footer{position:relative;z-index:2;text-align:center;padding:0 20px 28px;color:rgba(255,255,255,.64);font-size:12px}@media(max-width:700px){.nav-shell{padding:14px 17px}.logo{font-size:14px}nav{gap:12px}nav a{font-size:9px}.screen{padding:32px 20px;min-height:620px}.glass{border-radius:28px}.date-boxes input{width:82px}.message-card{padding:24px 18px 28px}.message-scroll{max-height:64vh}}
+</style>
+</head><body>
+<header class="nav-shell"><div class="logo">MADAM JI ♡</div><nav><a href="#home" onclick="showScreen('home')">HOME</a><a href="#message">SORRY</a></nav></header>
+<main class="page">
+<section class="screen glass active" id="home"><div class="content fade-in"><div class="eyebrow">A LITTLE QUESTION FOR MADAM JI</div><h1>Are you upset? 👀</h1><p class="lead">Neeche wala answer honestly dena. 😭🫶</p><div class="button-row"><button class="primary" onclick="openGif();return false">Yes 👀</button><button onclick="openGif();return false">No 🙂‍↔️</button></div><div class="dots"><i></i><i></i><i></i></div></div></section>
+<section class="screen glass" id="step2"><div class="content fade-in"><div class="eyebrow">OH NO 👀</div><h2>Oye madam jii aap toh naraz ho 👀</h2><p class="lead">Baap re 🫣 acha chalo.</p><div class="button-row"><button class="primary" onclick="showScreen('step3')">Ab neeche click karo 👀😝</button></div></div></section>
+<section class="screen glass" id="step3"><div class="content fade-in"><div class="eyebrow">WARNING 😝</div><h2>Volume down 🔊</h2><div class="warning">Meme incoming. Please volume apne hisaab se rakhna 👀</div><div class="button-row"><button class="primary" onclick="showScreen('smile')">Click Me 🔘</button></div></div></section>
+<section class="screen glass" id="smile"><div class="content fade-in"><div class="eyebrow">ONE MORE QUESTION</div><h2>Madam jii smile please?</h2><div class="button-row"><button class="primary" onclick="showScreen('dob')">Yes 👀</button><button onclick="openVideo();return false">No 🙂‍↔️</button></div></div></section>
+<section class="screen glass" id="dob"><div class="content fade-in"><div class="eyebrow">SECRET ENTRY 👀</div><h2>🫣Jo aap ke dil mai hai us ki birthdate enter karein 👀</h2><p class="lead">DD MM YYYY</p><div class="date-boxes"><input id="dd" inputmode="numeric" maxlength="2" placeholder="DD"><input id="mm" inputmode="numeric" maxlength="2" placeholder="MM"><input id="yyyy" inputmode="numeric" maxlength="4" placeholder="YYYY"></div><button class="primary" onclick="checkDOB()">Enter</button><div class="wrong-message" id="wrongMessage"></div></div></section>
+<section class="screen glass" id="message"><div class="content message-card fade-in"><div class="message-head"><div class="eyebrow">A SMALL MESSAGE FOR YOU MADAM JII 🥹🫶</div><p>Please read all 🥹🫶</p></div><div class="glass message-scroll" id="messageScroll"><div class="message-text">Asalamualaikum 👀💞
+Madam jii please mujhe maaf kar den mai janta hu aap bahut naraz aur gussa ho 🫠🫶
+But mai kaise reh sakta hu 👀🫶 mujhe toh saans bhi nahi aa rahi sahi se kyu ke aap toh naraz ho 🫠🫶 ho na toh mai kaise rahunga Khush jab meri jaan💞 he naraz hai
+Ab dekho na 👀💞 hum kitne ache partaners hai chaheh hamary beech kitni bhi larai ho 🫠 alag toh Hume kisi ka baap nahi kar sakta 🫠🫶
+Aur mai meri galti kai liye maafi mangta hu jaan
+Mai janta hu 🥀 meri galti maafi ke layak nahi hai
+Lekin is bewakoof ko 🫠 umeed hai ke aap mujhe maaf kar dogi 🫠
+Aur aaj tak humne yeh rishta nibhaya hai
+Ek dusre ko maaf kar ke purani batien bhula kar ek dusre ko maaf Kiya hai 🫠
+Aur mai aap se is liye bhi mafi mangata hu ke mai jada dair tak naraz rehta hu jo ke mujhe nahi rehna chahiye mujhe ab realise ho raha hai ke aap ko kitna bura lagta hoga 🫠🫶 mai apni galtiyun par sharminda hu 🫠🫶 aur mujhe pura bharosa hai meri madam jii mujhe maaf zaroor karegi aur baat bhi karegi aur 👀 yeh 10 din tak baat na karna kya hota hai 👀 aisa waisa kuch nahi hota 👀 bhala aap toh mere bagair 1 din bhi nahi reh sakti 👀10 din kya rahogi 👀 balki mai bhi nahi reh sakta 👀🫶 mujhe pata hai madam jii 👀 aap ka dil nahi lagta mere bina 👀
+Pyaar karti ho na 👀 mere se 🫶 mai bhi karta hu 👀🫶 I love na jaan 👀💋🫂🌸🎀💖💞🫶🩷💗💓❤️‍🔥🫀💕💌💟♥️❤️‍🩹🌷🌺🪷🌸💮💐🌹🏵️🌻🌼
+Please mujhe maaf kar do 🫠🫶 please meri jaan 🫶🫠 please 🫠
+May be mera yeh sab karna acha na lage 🫠 but ik baar zaroor sochna bachaa 👀 mai nai yeh message pore pore dil se likha hai aur bas mujhe maaf kar do 🥺🥹😔 mai nahi reh sakta aap ke bina 😔 aur aap naraz ho tab toh bilkul nahi reh sakta 🫠🫶
+
+Please 🥺 mera bachaa mujhe maaf kar do🥺🫶
+
+Please meri jaan aaf kar do na 🥺🫶🫠
+
+Bayby maaf kar do na 👀 please 💗
+
+👀 Oye madam jii maaf kar do please 🥺🫶
+
+Aap jo kahogi woh karunga mai 🥺🫶 bas maaf kar do mujhe please 🥹😔🫶
+
+Mera bachaaaa mujhe pata hai aap maaf karogi 😔🫶 please mera bachaaa 🫠 maaf kar do na 🥺🥹
+
+Please mera kuchu puchuu 😝🤧 maaf kar do 👀🫶
+
+Please darling 😭 maaf kar de 😭🫶
+
+Ab aap maaf toh karogi na 👀 kar do na please 👀 🫠🫶
+
+Oye meri jaana 🫠🫶 maaf kar de yaar 🫠🫶
+Mai nahi reh pavunga aise 🫠🫶 please maaf kar de 🫠🫶 please 🥺
+
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Please 🥺
+Maaf kar do na please 🥺
+Oye meri jaan 🥺 maaf kar do na please 🥺
+
+Yaar 😭🫶 please mujhe maaf kar do
+Mai nahi reh pavunga yaar 🥺 aap ke bina 😔 I am attached with you jaanna 🥹🫶🫀
+
+Please 🥺 forgive me now 🥺🌸🫀
+Oye mera bachaaa 😭🥹🫶 please mujhe maaf kar do yaar 🥺 please yaar 🥺
+
+Yaar 🥹 hum aaj tak itne khush rahe hai na ik dusre ko maaf kar ke 🥹🫶 aur jaise aap mujhe manati ho na 🥹🫶 yeh Mera aise manan na toh us ke samne kuch nahi 🥹🫶
+I love it yaar 🫠🫀 Mera aise kehna toh kuch nahi aap ke mana ne ke samne 🥺🫀
+Kitne pyaar se manati ho aap 🥺🫀 sorry 😔 mujhe bahut dukh hai ke yaar mai nai aap se baat chupai 😔 but I am sorry 🥺 mai aap se aaj ke baad koi baat nahi chupavunga 👀🫶 i promise my bachaaaaa 🥹🫶
+
+Aur dekho na 🫠 aaj tak hum ne kitni larai kii kitna naraaz hue ik dusre se 🫠🥹 lekin at the end 👀 hum ik dusre ko maaf kar ke khush he rehte hai 🫠🥹
+May be aap ko mai kabhi kabhi annoying lagta hounga 👀🫠 but trust me 👀🫶 mujhe bahut acha lagta hai aap se baat karne mai aap ko manane mai aur jab aap manati ho hayeeee kitna acha lagta hai meri jaan 🫠🥹 you can't imagine yaar 🥹🫠
+Aur i know ab aap mujhe maaf karogi 👀
+
+Karogi na please 🥺
+Please 🥺 kar dena maaf please 🥺 warna aap ki pitti pittti ho jayegi 😝🥳 isiliye ab maaf kar do please 🥺 mera bacha 👀 please kar do 👀
+Aur suno 👀
+I love you mera bachaaaaaw 🫶🥹 meri jaan 🫶🥹 bahut pyaar karta hu aap se 🫶🥹
+Ummmmmmmmmmmmmmmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh 💋💋💋💋💕💋💋💕💋💋💋💋💋💗💓💖💋🫦🫀👀😝🤧🥳🫠😛🌹🏵️🌻🌸😭😔💐💮🌺🪷❤️‍🩹♥️🌺💟🥺🫶💕❤️‍🩹🌷🌺🪷💐💐🌹🌸😎🤧😤😮‍💨🙄🤭🥱🥱😱🫣🤨😞😞👻👻👻👻☠️☠️🌝😽😸😹😚😙😗😉🥳🥰😘💋💋💋
+
+Please forgive me now 🥹🫶
+
+Yours 👀
+Truly🫶 𝓐𝔃𝓱𝓮𝓻</div><div class="glass final-box"><p>Thank you so much madam jii for your time 🫶🥹<br>I love you soooo mucchhhh 🫶🥹 mera bachaaa 🥹🫶 ummmmah 💋</p><div class="button-row"><button class="primary" onclick="snowLove()">Loveee you tooo mera bachaaaa 🥹🫶mwauhhh 💋</button></div></div></div></div></section>
+</main><footer>made with too much effort & a little bit of panic ♡</footer>
+<div class="modal" id="gifModal"><div class="modal-card"><img id="gifImage" src="cat1.gif" alt="Cat GIF"><div class="modal-title">Madam Ji 👀</div></div></div>
+<div class="modal" id="videoModal"><div class="modal-card"><div class="modal-title" style="margin-bottom:10px">Okay... once again smile please 👀</div><div class="video-wrap"><video id="memeVideo" src="meme.mp4" playsinline preload="metadata"></video></div></div></div><div class="snow-layer" id="snowLayer"></div>
+<script>
+const screens=['home','step2','step3','smile','dob','message'];let gifTurn=0;
+function showScreen(id){screens.forEach(s=>document.getElementById(s).classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+const gifModal=document.getElementById('gifModal'),gifImage=document.getElementById('gifImage');
+function openGif(){gifTurn++;gifImage.src=gifTurn%2?'cat1.gif':'cat2.gif';gifModal.classList.add('show');setTimeout(()=>{gifModal.classList.remove('show')},4600)}
+const videoModal=document.getElementById('videoModal'),video=document.getElementById('memeVideo');
+function openVideo(){videoModal.classList.add('show');video.currentTime=0;video.muted=false;video.volume=1;video.play().catch(()=>{video.controls=true})}
+video.addEventListener('ended',()=>{videoModal.classList.remove('show')});
+function checkDOB(){const d=document.getElementById('dd').value.trim(),m=document.getElementById('mm').value.trim(),y=document.getElementById('yyyy').value.trim(),w=document.getElementById('wrongMessage');if(d==='28'&&m==='10'&&y==='2008'){w.textContent='';showScreen('message')}else{w.textContent=Math.random()>.5?'👀🫣 Yeh kya baat hui 😝':'👀 Wrong hai mera bachaa, sahi dalo.'}}
+document.getElementById('dd').addEventListener('input',e=>{if(e.target.value.length===2)document.getElementById('mm').focus()});document.getElementById('mm').addEventListener('input',e=>{if(e.target.value.length===2)document.getElementById('yyyy').focus()});
+function snowLove(){const layer=document.getElementById('snowLayer'),emojis=['🫶','💋','🥹','💗','💞','🌸','🩷','💕','🥺'];for(let i=0;i<90;i++){const s=document.createElement('span');s.className='snow';s.textContent=emojis[Math.floor(Math.random()*emojis.length)];s.style.left=Math.random()*100+'%';s.style.setProperty('--drift',(Math.random()*180-90)+'px');s.style.animationDuration=3.5+Math.random()*3.5+'s';s.style.animationDelay=Math.random()*1.2+'s';s.style.fontSize=14+Math.random()*14+'px';layer.appendChild(s);setTimeout(()=>s.remove(),9000)}}
+</script>
+</body></html>
